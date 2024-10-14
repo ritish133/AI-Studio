@@ -10,7 +10,7 @@ import Interview from '../../assets/interview.jpg';
 const Home = () => {
   const cards = [
     { name: 'CreatorAI', logo: Creator ,link: 'https://creator-ai-project.vercel.app/'},
-    { name: 'ImagineAI', logo:  Image , link: ''},
+    { name: 'ImagineAI', logo:  Image , link: 'test'},
     { name: 'TravelocityAI', logo: Travel, link:'https://aitravelplanner.onrender.com/'},
     { name: 'InterviewAI', logo: Interview , link: 'https://ai-mock-interview-snowy-nine.vercel.app/'},
   ];
