@@ -1,0 +1,267 @@
+/* index.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Home Section */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start */
+  min-height: 90vh; /* Ensure it takes full height */
+}
+
+/* Header Styles */
+
+/* Website Name Styles */
+.website-name {
+  font-size: 24px;
+}
+
+/* Login Button Styles */
+.login-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff; /* White text */
+  background-color: #333; /* Dark button color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.login-button:hover {
+  background-color: #555; /* Darken button on hover */
+}
+
+/* Card Container Styles */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between cards */
+  margin: 20px auto; /* Centered margin */
+}
+
+/* Card Styles */
+.card {
+  width: 250px;
+  height: 300px;
+  perspective: 1000px; /* Enable 3D perspective */
+  transition: transform 0.6s ease; /* Smooth transition for the expand effect */
+}
+
+.card:hover {
+  transform: scale(1.1); /* Expand on hover */
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s; /* Animation duration for flipping */
+  transform-style: preserve-3d; /* Allow 3D transformation */
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg); /* Flip effect on hover */
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide the back face when not visible */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #1730c6; /* Border color for cards */
+  border-radius: 10px;
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #f0f0f0
+  ); /* Gradient background for cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.card-front {
+  color: #333; /* Text color for card front */
+  font-size: 18px; /* Font size for card front */
+}
+
+.card-back {
+  transform: rotateY(180deg); /* Hide back face by default */
+}
+
+.card-logo {
+  width: 80%; /* Logo size adjustment */
+  height: auto; /* Auto height for logo */
+}
+
+/* Background Section Styles */
+.background-home {
+  background-image: url("../../assets/91627.jpg"); /* Retain original background image */
+  width: 100vw;
+  height: 90vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px; /* Reduced margin for better spacing */
+  text-align: center; /* Center text in the background */
+  color: #ffffff; /* White text for the background section */
+}
+
+.background-home h1 {
+  font-size: 3rem; /* Larger font size for main heading */
+  margin: 20px 0; /* Spacing around the heading */
+}
+
+.background-home button {
+  padding: 12px 24px;
+  font-size: 18px;
+  color: #ffffff; /* White text */
+  background-color: transparent; /* Button color */
+  border: solid;
+  border-color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.background-home button:hover {
+  background-color: #c2185b; /* Darker pink on hover */
+}
+
+/* Detail Section Styles */
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  align-items: center; /* Stack details vertically */
+  margin: 20px; /* Margin around the detail section */
+  width: 90%; /* Width of the detail section */
+}
+
+.detail-item {
+  display: flex;
+  justify-content: center;
+  row-gap: 15px;
+  width: 75%;
+  align-items: center; /* Center items vertically */
+  margin: 20px 0; /* Space between detail items */
+}
+
+.detail-item:nth-child(even) {
+  flex-direction: row-reverse; /* Reverse order for even items */
+}
+
+.detail-image {
+  width: 300px; /* Image takes half of the container */
+  padding: 10px; /* Padding around the image */
+}
+
+.detail-text {
+  width: 50%; /* Text takes the other half */
+  padding: 10px; /* Padding around the text */
+  font-size: 1.2rem; /* Font size for text */
+  color: #333; /* Dark text color for better readability */
+}
+
+/* Detail Button Styles */
+.detail-button {
+    margin-top: 15px;
+    background-color: #344cc1; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Spacing inside the button */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for smooth effects */
+    text-align: center; /* Center text */
+  }
+  
+  .detail-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+  }
+  
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .detail-item {
+    flex-direction: column; /* Stack vertically on small screens */
+  }
+
+  .detail-image,
+  .detail-text {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+/* Tools Used Section */
+/* Tools Logos Section */
+.tools-logos {
+    width: 100vw;
+    padding: 0px, 225px ;
+    margin: 40px auto; /* Center the section */
+    text-align: center; /* Center text */
+  }
+  
+  .tools-logos h2 {
+    font-size: 2rem; /* Larger font for the section title */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  .logo-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-around; /* Center logos */
+
+    flex-wrap: wrap; /* Allow logos to wrap */
+    gap: 20px; 
+    height: 100px;/* Space between logos */
+  }
+  
+  .tool-logo {
+    width: 100px; /* Set a uniform width for logos */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s; /* Add transition for hover effect */
+  }
+  
+  .tool-logo:hover {
+    transform: scale(1.1); /* Scale up on hover */
+  }
+  
+
+/* Footer Styles */
+.footer {
+  background: linear-gradient(
+    to right,
+    #333,
+    #555
+  ); /* Gradient background for footer */
+  color: white; /* White text for contrast */
+  padding: 20px; /* Padding around footer */
+  text-align: center; /* Center text */
+  width: 100vw;
+}
+
+.footer-content {
+  margin-bottom: 10px; /* Space between content and copyright */
+}
+
+.social-links a {
+  color: white; /* White links */
+  margin: 0 10px; /* Space between links */
+  text-decoration: none; /* Remove underline */
+}
+
+.social-links a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
