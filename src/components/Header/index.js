@@ -9,7 +9,6 @@ const Header = () => {
       <div className="logo-container">
         <img src={Logo} alt="Website Logo" className="logo" />
       </div>
-      <button className="login-button">Login</button>
     </header>
   );
 };

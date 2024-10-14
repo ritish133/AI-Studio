@@ -11,28 +11,28 @@ const Home = () => {
   const cards = [
     { name: 'CreatorAI', logo: Creator ,link: 'https://creator-ai-project.vercel.app/'},
     { name: 'ImagineAI', logo:  Image , link: 'test'},
-    { name: 'TravelocityAI', logo: Travel, link:'https://aitravelplanner.onrender.com/'},
+    { name: 'Travelocity', logo: Travel, link:'https://aitravelplanner.onrender.com/'},
     { name: 'InterviewAI', logo: Interview , link: 'https://ai-mock-interview-snowy-nine.vercel.app/'},
   ];
 
   const details = [
     {
-      image: 'https://via.placeholder.com/300',
+      image: Creator,
       text: 'CreatorAI is a platform that harnesses the power of artificial intelligence to create unique content.',
       link: 'https://creator-ai-project.vercel.app/',
     },
     {
-      image: 'https://via.placeholder.com/300',
+      image: Image,
       text: 'ImagineAI allows you to visualize concepts through AI-generated art and designs.',
       link: 'https://imagineai.example.com',
     },
     {
-      image: 'https://via.placeholder.com/300',
-      text: 'TravelocityAI offers personalized travel planning using AI technology.',
+      image: Travel,
+      text: 'Travelocity offers personalized travel planning using AI technology.',
       link: 'https://aitravelplanner.onrender.com/',
     },
     {
-      image: 'https://via.placeholder.com/300',
+      image:  Interview,
       text: 'InterviewAI prepares you for job interviews with simulated questions and feedback.',
       link: 'https://ai-mock-interview-snowy-nine.vercel.app/',
     },
