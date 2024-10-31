@@ -12,7 +12,7 @@ const Home = () => {
     { name: 'CreatorAI', logo: Creator ,link: 'https://creator-ai-project.vercel.app/'},
     { name: 'ImagineAI', logo:  Image , link: 'https://imagine-ai-mern.vercel.app/'},
     { name: 'Travelocity', logo: Travel, link:'https://aitravelplanner.onrender.com/'},
-    { name: 'InterviewAI', logo: Interview , link: 'https://ai-mock-interview-snowy-nine.vercel.app/'},
+    { name: 'InterviewAI', logo: Interview , link: 'https://ai-mock-interview-azure.vercel.app/'},
   ];
 
   const details = [
@@ -34,7 +34,7 @@ const Home = () => {
     {
       image:  Interview,
       text: 'InterviewAI prepares you for job interviews with simulated questions and feedback.',
-      link: 'https://ai-mock-interview-snowy-nine.vercel.app/',
+      link: 'https://ai-mock-interview-azure.vercel.app/',
     },
   ];
 
