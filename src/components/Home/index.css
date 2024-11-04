@@ -154,6 +154,7 @@ body {
   justify-content: center;
   row-gap: 15px;
   width: 75%;
+  height: 13rem;
   align-items: center; /* Center items vertically */
   margin: 20px 0; /* Space between detail items */
 }
@@ -189,7 +190,7 @@ body {
   }
   
   .detail-button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #1330c3; /* Darker green on hover */
     transform: scale(1.05); /* Slightly scale up on hover */
   }
   

@@ -2,7 +2,7 @@ import React from 'react'
 
 const NotFound = () => {
   return (
-    <div>Comming Soon</div>
+    <div>Coming Soon</div>
   )
 }
 

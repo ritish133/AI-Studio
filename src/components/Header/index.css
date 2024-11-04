@@ -19,10 +19,6 @@
     transition: transform 0.3s ease; /* Smooth scaling effect on hover */
   }
   
-  /* Hover effect for logo */
-  .logo:hover {
-    transform: scale(1.1); /* Scale the logo on hover */
-  }
   
   /* Logo container for additional styling */
   .logo-container {
@@ -52,4 +48,6 @@
       width: 100px; /* Adjust logo size on smaller screens */
     }
   }
+
+  
   

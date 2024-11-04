@@ -9,10 +9,10 @@ import Interview from '../../assets/interview.jpg';
 
 const Home = () => {
   const cards = [
-    { name: 'CreatorAI', logo: Creator ,link: 'https://creator-ai-project.vercel.app/'},
-    { name: 'ImagineAI', logo:  Image , link: 'https://imagine-ai-mern.vercel.app/'},
-    { name: 'Travelocity', logo: Travel, link:'https://aitravelplanner.onrender.com/'},
-    { name: 'InterviewAI', logo: Interview , link: 'https://ai-mock-interview-azure.vercel.app/'},
+    { name: 'CreatorAI', work: 'AI Content Creator', logo: Creator ,link: 'https://creator-ai-project.vercel.app/'},
+    { name: 'ImagineAI', work: 'AI Image Generator', logo:  Image , link: 'https://imagine-ai-mern.vercel.app/'},
+    { name: 'Travelocity', work: 'AI Travel Planner', logo: Travel, link:'https://aitravelplanner.onrender.com/'},
+    { name: 'MockMateAI', work: 'AI Interview Mocker', logo: Interview , link: 'https://ai-mock-interview-azure.vercel.app/'},
   ];
 
   const details = [
@@ -33,7 +33,7 @@ const Home = () => {
     },
     {
       image:  Interview,
-      text: 'InterviewAI prepares you for job interviews with simulated questions and feedback.',
+      text: 'MockMateAI prepares you for job interviews with simulated questions and feedback.',
       link: 'https://ai-mock-interview-azure.vercel.app/',
     },
   ];
@@ -51,28 +51,84 @@ const Home = () => {
   return (
     <div className="home">
       <Header />
-      <div className="background-home">
-        <h1>Making AI More Accessible</h1>
-        <button>Check Out Our Products</button>
+      <div className="background-home relative">
+        <div className=' flex flex-col justify-center items-center absolute top-64'>
+          <h1>Making AI More Accessible</h1>
+          <a href='#products'>
+          <button>Check Out Our Products</button>
+          </a>
+        </div>
+        
       </div>
-      <h1>Our Products</h1>
-      <div className="card-container">
-        {cards.map((card, index) => (
-          <div className="card" key={index}>
-            <div className="card-inner" onClick={() => window.location.href = card.link}>
+
+      <h1 id="products" className='text-3xl font-bold mt-16 mb-10'>Our Products</h1>
+      <div className="card-container m-10">
+
+        {/* Creator AI */}
+          <div className="card">
+            <div className="card-inner" onClick={() => window.location.href = 'https://creator-ai-project.vercel.app/'}>
               <div className="card-back">
-                <div className="card-name">{card.name}</div>
+                <div className="flex flex-col justify-center items-center">
+                  <img className="card-logo" src={Creator} alt='Creator AI' />
+                  <h2 className='mt-5'>AI Content Creator</h2>
+                </div>
               </div>
               <div className="card-front">
-                <img className="card-logo" src={card.logo} alt={card.name} />
+                <img className="card-logo" src={Creator} alt='Creator AI' />
               </div>
             </div>
           </div>
-        ))}
+
+        {/* Imagine AI */}
+          <div className="card">
+            <div className="card-inner" onClick={() => window.location.href = 'https://imagine-ai-mern.vercel.app/'}>
+              <div className="card-back">
+                <div className="flex flex-col justify-center items-center">
+                  <img className="card-logo" src={Image} alt='Imagine AI' />
+                  <h2 className='-mt-5'>AI Image Generator</h2>
+                </div>
+              </div>
+              <div className="card-front">
+                <img className="card-logo" src={Image} alt='Imagine AI' />
+              </div>
+            </div>
+          </div>
+
+        {/* Travelocity */}
+        <div className="card">
+            <div className="card-inner" onClick={() => window.location.href = 'https://aitravelplanner.onrender.com/'}>
+              <div className="card-back">
+                <div className="flex flex-col justify-center items-center">
+                  <img className="card-logo" src={Travel} alt='Travelocity' />
+                  <h2 className='mt-5'>AI Travel Planner</h2>
+                </div>
+              </div>
+              <div className="card-front">
+                <img className="card-logo" src={Travel} alt='Travelocity' />
+              </div>
+            </div>
+          </div>
+
+        {/* MockMate AI */}
+        <div className="card">
+            <div className="card-inner" onClick={() => window.location.href = 'https://ai-mock-interview-azure.vercel.app/'}>
+              <div className="card-back">
+                <div className="flex flex-col justify-center items-center relative">
+                  <img className="card-logo" src={Interview} alt='MockMate AI' />
+                  <h2 className='absolute top-[110px]'>AI Interview Mocker</h2>
+                </div>
+              </div>
+              <div className="card-front">
+                <img className="card-logo" src={Interview} alt='MockMate AI' />
+              </div>
+            </div>
+          </div>
+
       </div>
 
+
       {/* Detail Section */}
-      <h1>Details Section</h1>
+      <h1 id='details' className='text-3xl font-bold mt-24'>Details Section</h1>
       <div className="detail-container">
         {details.map((detail, index) => (
           <div className="detail-item" key={index}>
@@ -89,9 +145,9 @@ const Home = () => {
       </div>
 
       {/* Tools Logos Section */}
-      <div className="tools-logos">
-        <h2>Tools Used in Development</h2>
-        <div className="logo-container">
+      <div className="tools-logos" id='tools'>
+        <h2 className='text-3xl font-bold mt-14'>Tools Used in Development</h2>
+        <div className="logo-container mt-10">
           {toolsLogos.map((tool, index) => (
             <img key={index} src={tool.logo} alt={tool.name} className="tool-logo" />
           ))}
@@ -100,15 +156,6 @@ const Home = () => {
 
       {/* Footer Section */}
       <footer className="footer">
-        <div className="footer-content">
-          <h2>Connect with Us</h2>
-          <div className="social-links">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </div>
-        </div>
         <p>&copy; {new Date().getFullYear()} AI Studio. All Rights Reserved.</p>
       </footer>
     </div>
