@@ -199,6 +199,7 @@ body {
 @media (max-width: 768px) {
   .detail-item {
     flex-direction: column; /* Stack vertically on small screens */
+    height: 25rem;
   }
 
   .detail-image,
@@ -210,7 +211,7 @@ body {
 /* Tools Used Section */
 /* Tools Logos Section */
 .tools-logos {
-    width: 100vw;
+    width: 90%;
     padding: 0px, 225px ;
     margin: 40px auto; /* Center the section */
     text-align: center; /* Center text */
@@ -227,7 +228,7 @@ body {
 
     flex-wrap: wrap; /* Allow logos to wrap */
     gap: 20px; 
-    height: 100px;/* Space between logos */
+
   }
   
   .tool-logo {

@@ -10,7 +10,7 @@ const Header = () => {
         <img src={Logo} alt="AI Studio" className="logo h-16 w-36" />
       </div>
       <div className='w-full'>
-        <ul className='flex flex-row justify-evenly items-center'>
+        <ul className='flex flex-row justify-evenly items-center flex-wrap'>
           <a href='#products'>
             <li className='font-bold text-lg text-blue-700 hover:text-blue-800 transition-all'>Our Products</li>
           </a>

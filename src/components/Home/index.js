@@ -62,7 +62,7 @@ const Home = () => {
       </div>
 
       <h1 id="products" className='text-3xl font-bold mt-16 mb-10'>Our Products</h1>
-      <div className="card-container m-10">
+      <div className="card-container m-10 flex flex-wrap">
 
         {/* Creator AI */}
           <div className="card">
