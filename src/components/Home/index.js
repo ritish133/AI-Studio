@@ -19,7 +19,7 @@ const Home = () => {
     {
       image: Creator,
       text: 'CreatorAI is a platform that harnesses the power of artificial intelligence to create unique content.',
-      link: 'https://creator-ai-project.vercel.app/',
+      link: 'https://creator-ai-roan.vercel.app/',
     },
     {
       image: Image,
