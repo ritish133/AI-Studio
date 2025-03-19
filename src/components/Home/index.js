@@ -6,6 +6,7 @@ import Creator from '../../assets/creator.jpg'; // Import your local logo
 import Travel  from '../../assets/travel.jpg';
 import Image from '../../assets/image.png';
 import Interview from '../../assets/interview.jpg';
+import Form from '../../assets/form.png';
 
 const Home = () => {
   const cards = [
@@ -13,6 +14,7 @@ const Home = () => {
     { name: 'ImagineAI', work: 'AI Image Generator', logo:  Image , link: 'https://imagine-ai-mern.vercel.app/'},
     { name: 'Travelocity', work: 'AI Travel Planner', logo: Travel, link:'https://aitravelplanner.onrender.com/'},
     { name: 'MockMateAI', work: 'AI Interview Mocker', logo: Interview , link: 'https://ai-mock-interview-azure.vercel.app/'},
+    { name: 'Formify', work: 'AI Form Builder', logo: Form , link: 'https://formify-pi.vercel.app/'},
   ];
 
   const details = [
@@ -36,6 +38,11 @@ const Home = () => {
       text: 'MockMateAI prepares you for job interviews with simulated questions and feedback.',
       link: 'https://ai-mock-interview-azure.vercel.app/',
     },
+    {
+      image:  Form,
+      text: 'Formify simplifies form creation with AI-powered templates and seamless data collection.',
+      link: 'https://formify-pi.vercel.app/',
+    },
   ];
 
   const toolsLogos = [
@@ -44,7 +51,7 @@ const Home = () => {
     { name: 'MongoDB', logo: 'https://seeklogo.com/images/M/mongodb-logo-4A71340576-seeklogo.com.png' },
     { name: 'Express', logo: 'https://seeklogo.com/images/E/express-js-logo-FA36FF1D3F-seeklogo.com.png' },
     { name: 'Tailwind CSS', logo: 'https://seeklogo.com/images/T/tailwind-css-wordmark-logo-3518C9010A-seeklogo.com.png' },
-    { name: 'GitHub', logo: 'https://seeklogo.com/images/G/github-logo-7880D80B8D-seeklogo.com.png' },
+    { name: 'Next.js', logo: 'https://images.seeklogo.com/logo-png/39/1/next-js-logo-png_seeklogo-394608.png' },
     { name: 'TypeScript', logo: 'https://seeklogo.com/images/T/typescript-logo-B29A3F462D-seeklogo.com.png' },
   ];
 
@@ -120,6 +127,21 @@ const Home = () => {
               </div>
               <div className="card-front">
                 <img className="card-logo" src={Interview} alt='MockMate AI' />
+              </div>
+            </div>
+          </div>
+        
+        {/* Formify */}
+        <div className="card">
+            <div className="card-inner" onClick={() => window.location.href = 'https://formify-pi.vercel.app/'}>
+              <div className="card-back">
+                <div className="flex flex-col justify-center items-center relative">
+                  <img className="card-logo" src={Form} alt='Formify' />
+                  <h2 className='absolute top-[110px]'>AI Form Builder</h2>
+                </div>
+              </div>
+              <div className="card-front">
+                <img className="card-logo" src={Form} alt='Formify' />
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 // Header.js
 import React from 'react';
-import './index.css'; // Create a separate CSS file for header styling
-import Logo from '../../assets/PageLogo.png'; // Import your logo
+import './index.css';
+import Logo from '../../assets/PageLogo.png'; 
 
 const Header = () => {
   return (
