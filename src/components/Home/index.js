@@ -10,7 +10,7 @@ import Form from '../../assets/form.png';
 
 const Home = () => {
   const cards = [
-    { name: 'CreatorAI', work: 'AI Content Creator', logo: Creator ,link: 'https://creator-ai-roan.vercel.app/'},
+    { name: 'CreatorAI', work: 'AI Content Creator', logo: Creator ,link: 'https://creator-ai-content-generator.vercel.app/'},
     { name: 'ImagineAI', work: 'AI Image Generator', logo:  Image , link: 'https://imagine-ai-mern.vercel.app/'},
     { name: 'Travelocity', work: 'AI Travel Planner', logo: Travel, link:'https://aitravelplanner.onrender.com/'},
     { name: 'MockMateAI', work: 'AI Interview Mocker', logo: Interview , link: 'https://ai-mock-interview-azure.vercel.app/'},
@@ -21,7 +21,7 @@ const Home = () => {
     {
       image: Creator,
       text: 'CreatorAI is a platform that harnesses the power of artificial intelligence to create unique content.',
-      link: 'https://creator-ai-roan.vercel.app/',
+      link: 'https://creator-ai-content-generator.vercel.app/',
     },
     {
       image: Image,
@@ -73,7 +73,7 @@ const Home = () => {
 
         {/* Creator AI */}
           <div className="card">
-            <div className="card-inner" onClick={() => window.location.href = 'https://creator-ai-roan.vercel.app/'}>
+            <div className="card-inner" onClick={() => window.location.href = 'https://creator-ai-content-generator.vercel.app/'}>
               <div className="card-back">
                 <div className="flex flex-col justify-center items-center">
                   <img className="card-logo" src={Creator} alt='Creator AI' />
