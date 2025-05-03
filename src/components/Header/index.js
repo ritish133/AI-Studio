@@ -1,7 +1,7 @@
 // Header.js
 import React from 'react';
 import './index.css';
-import Logo from '../../assets/PageLogo.png'; 
+import Logo from '../../assets/PageLogo.png';
 
 const Header = () => {
   return (
@@ -19,6 +19,10 @@ const Header = () => {
           </a>
           <a href='#tools'>
             <li className='font-bold text-lg text-blue-700 hover:text-blue-800 transition-all'>Tools Used</li>
+          </a>
+
+          <a href="/supportus">
+            <li className='font-bold text-lg text-blue-700 hover:text-blue-800 transition-all'>Support Us</li>
           </a>
         </ul>
       </div>
